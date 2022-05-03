@@ -1,0 +1,17 @@
+<article>
+  <!-- Exercise 6: Refactor header -->
+
+  <header>
+    <h1 data-uf="header-main">{{ (headings$ | async)?.main }}</h1>
+    <h2 data-uf="header-sub">{{ (headings$ | async)?.sub }}</h2>
+  </header>
+
+  <!-- Exercise 6: Pass observable directly -->
+
+  <ui-movie-list (paginate)="paginate()" [movies]="movies$ | async">
+  </ui-movie-list>
+
+  <!-- Exercise 6: Refactor loader -->
+
+  <div *ngIf="loading$ | async" class="loader"></div>
+</article>
