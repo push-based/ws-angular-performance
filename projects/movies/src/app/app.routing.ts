@@ -5,11 +5,11 @@ import { MovieListPageModule } from './pages/movie-list-page/movie-list-page.mod
 const ROUTES: Routes = [
   // Exercise 2: Replace this 2 routes
   {
-    path: 'list-category/:category',
+    path: 'list/category/:category',
     component: MovieListPageComponent,
   },
   {
-    path: 'list-genre/:genre',
+    path: 'list/genre/:genre',
     component: MovieListPageComponent,
   },
   {
