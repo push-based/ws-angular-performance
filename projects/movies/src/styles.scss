@@ -79,3 +79,20 @@ body.dark img:not([src*='.svg']) {
     }
   }
 }
+
+.dirty-checks {
+  font-size: 40px;
+  position: fixed;
+  bottom: 8px;
+  right: 8px;
+  background: hotpink;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  cursor: pointer;
+  z-index: 1090;
+}

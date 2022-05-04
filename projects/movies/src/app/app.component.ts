@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   template: `
+    <!-- Exercise 3: Add dirty checks here -->
     <app-shell>
       <router-outlet></router-outlet>
     </app-shell>
