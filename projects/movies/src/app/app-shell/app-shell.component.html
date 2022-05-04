@@ -1,8 +1,10 @@
 <!-- Exercise 6: Replace it with rxLet  directive -->
 <ng-container *ngIf="viewState$ | async as vs">
+  <!-- Exercise 7: replace with actions -->
+
   <ui-side-drawer
     [opened]="vs.sideDrawerOpen"
-    (openedChange)="ui.sideDrawerOpenToggle(false)"
+    (openedChange)="sideDrawerOpenToggle(false)"
   >
     <a class="navigation-header" href="/">
       <picture srcset="/assets/images/logo.svg" media="(min-width: 80em)">
@@ -99,10 +101,11 @@
   </ui-side-drawer>
   <div class="content-wrapper">
     <div class="ui-toolbar">
+      <!-- Exercise 7: replace with actions -->
       <ui-hamburger-button
         data-uf="menu-btn"
         class="ui-toolbar--action"
-        (click)="ui.sideDrawerOpenToggle(!vs.sideDrawerOpen)"
+        (click)="sideDrawerOpenToggle(!vs.sideDrawerOpen)"
       >
       </ui-hamburger-button>
       <div class="ui-toolbar--widget-container">
@@ -112,12 +115,7 @@
         ></ui-search-bar>
         <ui-dark-mode-toggle></ui-dark-mode-toggle>
         <div class="account-menu-dropdown">
-          <button
-            type="button"
-            name="profile"
-            class="profile-button"
-            (mouseenter)="ui.loadAccountMenu()"
-          >
+          <button type="button" name="profile" class="profile-button">
             <div class="focus-overlay"></div>
             <svg-icon name="account"></svg-icon>
           </button>
