@@ -15,7 +15,6 @@ As data source the [The Movie Database (TMDB)](https://www.themoviedb.org/) API 
 </section>
 
 
-
 ## Demo
 
 A [live deployment](https://angular-movies-a12d3.web.app/list/category/popular) of this app is available to try it out.
@@ -111,12 +110,12 @@ Contributions are always welcome!
 
 For large changes, please file an issue to discuss your proposed changes with us before working on a PR :)
 
-## Installation 
+## Installation  
 
-Clone and install the dependencies for `angular-movies` locally:
+Clone and install the dependencies for `ws-angular-performance` locally:
 
 ```bash 
-  git clone https://github.com/tastejs/angular-movies.git
+  git clone https://github.com/push-based/ws-angular-performance.git
   cd angular-movies 
   npm install
 ```

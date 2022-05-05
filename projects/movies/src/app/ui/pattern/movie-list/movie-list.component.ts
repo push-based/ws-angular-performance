@@ -37,6 +37,7 @@ type UiActions = { paginate: boolean };
         <!-- Exercise 3: Add lazy loading here and improve it -->
 
         <img
+
           class="aspectRatio-2-3 gradient"
           [src]="movie?.imgUrl || 'assets/images/no_poster_available.jpg'"
           [width]="movie.imgWidth"
